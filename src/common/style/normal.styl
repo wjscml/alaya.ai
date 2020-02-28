@@ -1,0 +1,516 @@
+.main
+    height 100%
+    width 100%
+    min-width 1080px
+    position relative
+    &.bg1
+        background linear-gradient(to bottom right, #1C2023, #143141)
+        .page1,.page2,.page4,.page6,.page7
+            background: url(../image/Grid-Teal@2x.webp) left top
+            background-size: 547px 316px
+    &.bg2
+        background: url(../image/Grid-Teal@2x.webp) left top
+        background-size: 547px 316px 
+        background-color: #fff
+    &.bg3
+        background: url(../image/dark-triangle-pattern.png) no-repeat center
+        background-size: cover
+        background-color: #0A1724   
+    &.bg5
+        background: url(../image/background@3x.webp) no-repeat center 
+        background-size: cover     
+    .page1
+        position relative 
+        .top
+            height 8rem
+            position absolute
+            top 0
+            left 0
+            width 100%   
+            z-index 100
+            .logo
+                margin-left 16rem
+                height: 8rem
+                display flex
+                align-items: center
+                .logo-img
+                    height 3.5rem
+        .content
+            position absolute
+            padding 0 16rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)
+            display flex
+            justify-content: space-between
+            align-items: center
+            .text-box
+                min-width: 30rem
+                width 45%
+                color #fff
+                text-align: left
+                .title-primary
+                    display inline-block
+                    padding 0 1.6rem
+                    line-height: 4.8rem
+                    height 4.8rem
+                    font-size: 3.2rem
+                    margin-bottom 3rem
+                    border-radius: 4px
+                    background-color: #009aa6
+                    color #FFF
+                    font-weight: 600
+                .title 
+                    margin-bottom 1.6rem
+                    line-height: 4.8rem
+                    font-size: 4.4rem                       
+                .sub-title 
+                    line-height: 2.4rem
+                    font-size: 1.6rem
+                    color #f0f0f0
+    .page2
+        .content
+            position absolute
+            padding 0 16rem
+            left 0
+            right 0
+            top 50vh
+            height 30rem
+            transform: translate(0, -50%)
+            display flex
+            justify-content: space-between
+            align-items: center
+            .text-box
+                min-width: 30rem
+                width 45%
+                text-align: left
+                .aigis-btn
+                    margin-top 4.6rem
+                    display flex
+                    align-items: center
+                    .title-primary
+                        display inline-block
+                        padding 0 1.6rem
+                        line-height: 5rem
+                        height 5rem
+                        font-size: 2rem
+                        font-weight: 600                       
+                        border-radius: 6px
+                        background-color: #009aa6
+                        color #fff
+                        cursor pointer
+                        &:hover
+                            background-color: #63ceca
+                    .app-download
+                        position relative
+                        margin-left 11rem
+                        font-size: 1.6rem
+                        color #f0f0f0
+                        &:hover
+                            .download
+                                display block
+                        .download
+                            display none
+                            position absolute
+                            top 44px
+                            right -28px
+                            width: 96px
+                            height 96px
+                            padding 8px
+                            border-radius 4px
+                            background-color #009AA6
+                            box-shadow: 0 0 3px #0A1724
+                            z-index 2  
+                            &:before
+                                content: ""
+                                position: absolute
+                                left: 0
+                                right 0
+                                top: -24px
+                                height: 24px
+                            .pulldown-bg
+                                position absolute
+                                width 100%
+                                height 6px
+                                top -6px
+                                left 0
+                                background url(../image/pulldown-bg.png) no-repeat center top
+                .title 
+                    margin-bottom 1.6rem
+                    line-height: 5rem
+                    font-size: 4.6rem   
+                    color #fff 
+                .sub-title 
+                    line-height: 2.4rem
+                    font-size: 1.6rem
+                    color #f0f0f0
+    .page3
+        .content
+            position absolute
+            padding 0 18rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)            
+            .left           
+                .column
+                    padding 2rem 0
+                    color #fff
+                    .title
+                        margin-bottom: 1rem
+                        font-size 3rem
+                    .sub-title
+                        margin-bottom: 1rem
+                        font-size 2rem
+                        color #63ceca
+                        span
+                            display inline-block
+                            padding 0 .6rem
+                            margin-right 2rem
+                            background-color: rgba(255, 255, 255, 0.1)
+                    .list
+                        color #d0d4d3
+                        &.list-row
+                            display flex
+                            flex-wrap: wrap
+                            li
+                                margin-right 3rem
+                                list-style-type square
+                        li
+                            list-style-type disc
+                            font-size: 1.6rem    
+            .right
+                position absolute
+                right 10rem
+                top 50%
+                transform: translate(0, 10%) 
+                transition: transform 1s ease
+                width: 35%     
+                &.active3
+                    transform: translate(0, -50%)   
+    .page4       
+        .content
+            min-width 1080px
+            position absolute
+            padding 0 12rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)  
+            .tips
+                margin-bottom 1rem
+                color #d0d4d3
+                font-size 2rem
+                font-weight: 600
+            .title
+                margin-bottom: 5rem
+                line-height: 5rem
+                font-size 4.6rem
+                color #63ceca
+            .serve-container
+                display flex
+                margin-bottom: 2.4rem
+                .serve-column
+                    flex 1
+                    margin-right 4rem
+                    &:last-child
+                        margin-right 0
+                    .image-block
+                        margin-bottom 2rem
+                        width 5rem
+                        height 5rem
+                        background-size: cover
+                        background: url(../image/fill-1.svg) no-repeat center
+                        &.block2
+                            background-image: url(../image/fill-2.webp)
+                        &.block3
+                            background-image: url(../image/fill-3.webp)
+                        &.block4
+                            background-image: url(../image/fill-4.webp)
+                    .column-title
+                        margin-bottom 1.2rem
+                        line-height: 2.4rem
+                        font-size 2.2rem
+                        color #63ceca
+                    .column-text
+                        color #f0f0f0
+    .page5
+        .content
+            position absolute
+            padding 0 9rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)
+            .tips
+                min-width: 72rem
+                margin-bottom 1rem
+                color #d0d4d3
+                font-size 2rem
+                font-weight: 600
+                text-align: center
+            .title
+                min-width: 72rem
+                margin-bottom: 5rem
+                line-height: 5rem
+                font-size 4.6rem
+                color #63ceca
+                text-align: center
+            .container
+                padding 0 7rem
+                position relative
+                &:hover
+                    .turn-btn
+                        display block
+                .turn-btn
+                    display none
+                    position absolute
+                    top 50%
+                    width: 6rem
+                    height 6rem
+                    border-radius: 50%
+                    transform: translate(0, -50%) 
+                    background: no-repeat center
+                    background-size: 4rem
+                    background-color: rgba(255, 255, 255, 0.2)               
+                    z-index 100
+                    &.left-btn
+                        left 0  
+                        background-image: url(../image/left.png)
+                    &.right-btn
+                        right 0  
+                        background-image: url(../image/right.png)
+                .card-swipe
+                    overflow hidden         
+                    .card-slide
+                        width 9999px
+                        .card-list
+                            float left
+                            color #fff
+                            min-width: calc((1080px - 32rem) / 4) 
+                            width: calc((100vw - 32rem) / 4)                
+                            transform: translate(-100%, 0)
+                            transition: transform 0s
+                            &.active
+                                transform: translate(-200%, 0)
+                                transition: transform 1s ease
+                            &.antiActive
+                                transform: translate(0, 0)
+                                transition: transform 1s ease
+                            .image-box
+                                box-sizing: content-box
+                                width: 80%
+                                margin-left 10%
+                                padding-top 80%
+                                margin-bottom 10%
+                                background-color: #fff
+                                font-size: 0
+                                background-repeat: no-repeat
+                                background-size: cover
+    .page6
+        .content   
+            position absolute
+            padding 0 7rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)            
+            .title
+                margin-left 7rem
+                margin-bottom: 3rem
+                line-height: 5rem
+                font-size 4.6rem
+                color #63ceca
+            .container
+                overflow hidden
+                position relative
+                width: 100%  
+                
+                &:hover
+                    .turn-btn
+                        display block
+                .turn-btn
+                    display none
+                    position absolute
+                    top 50%
+                    width: 6rem
+                    height 6rem
+                    border-radius: 50%
+                    transform: translate(0, -50%) 
+                    background: no-repeat center
+                    background-size: 4rem
+                    background-color: rgba(255, 255, 255, 0.2)                
+                    z-index 100
+                    &.left-btn
+                        left 0  
+                        background-image: url(../image/left.png)
+                    &.right-btn
+                        right 0  
+                        background-image: url(../image/right.png)    
+                .slide-box
+                    overflow hidden
+                    position relative
+                    width 9999px
+                    left 0
+                    transition: all 1s ease
+                    .serve-box                    
+                        float left                     
+                        width calc(100vw - 14rem) 
+                        min-width calc(1080px - 14rem) 
+                        padding 0 7rem
+                        box-sizing: border-box
+                        .image-box
+                            display: flex
+                            justify-content: space-between
+                            img 
+                                width 70%
+                                height 52.5%
+                            .info
+                                padding-left 3rem
+                                color #f0f0f0
+                                p
+                                    margin 1rem 0
+                        .tips            
+                            margin-bottom 2rem
+                            font-size: 1.8rem           
+                            color #009aa6  
+        .footer
+            position fixed
+            bottom 0
+            left 0
+            right 0
+            height 8rem
+            padding 4rem 0
+            background: url(../image/footer-banner.png) no-repeat center
+            background-size: cover
+            background-color: rgba(0, 0, 0, .5) 
+            transform: translate(-100%, 0)
+            opacity 0
+            transition: all 1s .5s ease
+            &.footer-show
+                opacity 1     
+                transform: translate(0, 0) 
+            .logo-img
+                margin 0 auto
+                height 3rem
+                display block
+            .email
+                margin-top 2rem
+                font-size: 1.6rem
+                color #63ceca
+                text-align: center   
+                span
+                    margin-right 2rem 
+            .close
+                position absolute
+                right 10rem
+                top 1rem
+                padding 0 .4rem
+                color #999
+                border 1px solid #666
+                border-radius: 4px
+                cursor pointer
+                &:hover
+                    color #e64360
+    .page7 
+        .content   
+            position absolute
+            padding 7rem
+            left 0
+            right 0
+            top 50vh
+            transform: translate(0, -50%)    
+            background: url(../image/footer-banner.png) no-repeat center
+            background-size: cover         
+            .title
+                width: 100%
+                text-align: center
+                margin-bottom: 3rem
+                line-height: 5rem
+                font-size 4.6rem
+                color #63ceca
+            .email
+                width: 100%
+                text-align: center 
+                font-size 1.8rem
+                color #fff
+    .img-box
+        min-width: 29rem
+        position fixed
+        right 2rem
+        top 50%
+        transform: translate(0, -50%)
+        transition: opacity .5s linear
+        width 45%
+        .pic
+            position absolute
+            right 0
+            top 50%
+            transform: translate(0, -50%)
+            transition: all 1s ease
+            width: 100%
+        &.active2
+            .pic1
+                transform: translate(0, -45%)
+            .pic2,.pic3  
+                transform: translate(0, -60%)
+            .pic4
+                transform: translate(0, -65%)   
+        &.active3
+            opacity 0
+            .pic1
+                transform: translate(0, 0)
+            .pic2 
+                transform: translate(-80%, -60%)
+            .pic3  
+                transform: translate(50%, -60%)
+            .pic4
+                transform: translate(0, -105%)
+        &.img-hide
+            display none
+    .pagination 
+        width: 30px;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        padding: 40px 0;
+        z-index: 1;
+        transform: translate(0, -50%);
+        .prev-page, .next-page 
+            display: block;
+            width: 25px;
+            height: 25px;
+            line-height: 26px;
+            position: absolute;
+            right: 2px;
+            z-index: 9999;
+            background: rgba(255, 255, 255, .5);
+            border-radius: 50%;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        .prev-page
+            top: 0
+        .next-page 
+            bottom 0
+        span
+            width: 25px;
+            height: 25px;
+            display: block;
+            line-height: 28px;
+            text-align: center;
+            padding-left: 3px;
+            &:after
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: inline-block;
+                background: rgba(0, 0, 0, .5);
+                transition: background .3s ease;
+            &.active
+                &:after
+                    background: rgba(255, 255, 255, .5);
+           
