@@ -40,7 +40,7 @@ export default class Admin extends React.Component {
     }
     onBefore (origin, direction, target) {  
         this.setState({curPage: target})
-        if (target == 9) {
+        if (target == 9) { // eslint-disable-line
             this.setState({showFooter: true})
         }
     }
@@ -95,11 +95,11 @@ export default class Admin extends React.Component {
     render () {  
         var bgClass = cx({
             'main-h5': true,
-            'bg1-h5': this.state.curPage == 1 || this.state.curPage == 9,
-            'bg2-h5': this.state.curPage == 2,
-            'bg3-h5': this.state.curPage == 3,
-            'bg4-h5': this.state.curPage == 4 || this.state.curPage == 5 || this.state.curPage == 6 || this.state.curPage == 7,
-            'bg8-h5': this.state.curPage == 8
+            'bg1-h5': this.state.curPage == 1 || this.state.curPage == 9, // eslint-disable-line
+            'bg2-h5': this.state.curPage == 2, // eslint-disable-line
+            'bg3-h5': this.state.curPage == 3, // eslint-disable-line
+            'bg4-h5': this.state.curPage == 4 || this.state.curPage == 5 || this.state.curPage == 6 || this.state.curPage == 7, // eslint-disable-line
+            'bg8-h5': this.state.curPage == 8 // eslint-disable-line
         });
         var serveList01 = serveList[0]
         var serveList02 = serveList[1]
@@ -147,7 +147,7 @@ export default class Admin extends React.Component {
                     </div>
                 }
                 {
-                    this.state.curPage == 3 &&
+                    this.state.curPage == 3 && // eslint-disable-line
                     <img className="bgImg" src="./assets/image/group-10.png" alt="" />
                 }
                 <SlideContainer page={this.initPage} ref="SlideContainer" before={this.onBefore.bind(this)}>  
@@ -156,7 +156,7 @@ export default class Admin extends React.Component {
                         return (
                         <SlidePage className={item.class} key={index}> 
                             {
-                                index == 0 &&
+                                index == 0 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="text-box">
                                         <div className="title-primary">第八识</div>
@@ -167,7 +167,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 1 &&
+                                index == 1 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="text-box">
                                         <div className="title">埃癸斯(Aigis)风险控制系统</div>
@@ -177,7 +177,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 2 &&
+                                index == 2 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="bg-cover"></div>
                                     <div className="left">         
@@ -209,7 +209,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 3 &&
+                                index == 3 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="tips">服务概述</div>
                                     <div className="title">第八识助您在行业中保持领先地位</div>
@@ -228,7 +228,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 4 &&
+                                index == 4 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="serve-container">
                                         {                                           
@@ -242,7 +242,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 5 &&
+                                index == 5 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="serve-container">
                                         {                                           
@@ -256,7 +256,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 6 &&
+                                index == 6 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="serve-container">
                                         {                                           
@@ -270,7 +270,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 7 &&
+                                index == 7 && // eslint-disable-line
                                 <div className="content-h5">
                                     <div className="tips">共塑未来</div>
                                     <div className="title">合作伙伴及客户</div>                                    
@@ -278,7 +278,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 8 &&
+                                index == 8 && // eslint-disable-line
                                 <div className="content-h5">                                 
                                     <div className="title">客户服务案例</div>  
                                     <ServeSlider data={this.state.caseList} autoPlay={true} interval={10000}></ServeSlider>                       
@@ -296,7 +296,7 @@ export default class Admin extends React.Component {
                                 </div>
                             */}
                             {
-                                index == 9 &&
+                                index == 9 && // eslint-disable-line
                                 <div className="content-h5">   
                                     <div className="bg-cover"></div>                              
                                     <div className="title">联系我们</div>  

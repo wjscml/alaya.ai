@@ -64,9 +64,9 @@ export default class Admin extends React.Component {
     render() {  
         var bgClass = cx({
             'main': true,
-            'bg1': this.state.curPage == 1 || this.state.curPage == 2 || this.state.curPage == 7,           
-            'bg3': this.state.curPage == 3 || this.state.curPage == 4,
-            'bg5': this.state.curPage == 5 || this.state.curPage == 6
+            'bg1': this.state.curPage == 1 || this.state.curPage == 2 || this.state.curPage == 7, // eslint-disable-line    
+            'bg3': this.state.curPage == 3 || this.state.curPage == 4, // eslint-disable-line
+            'bg5': this.state.curPage == 5 || this.state.curPage == 6 // eslint-disable-line
         });
         return (
             <div className={bgClass}>
@@ -76,7 +76,7 @@ export default class Admin extends React.Component {
                         return (
                         <SlidePage className={item.class} key={index}>
                             {
-                                index == 0 &&
+                                index == 0 && // eslint-disable-line
                                 <div className="top">                                
                                     <div className="logo">
                                         <img className="logo-img" src="./assets/image/logo.png" alt="logo" />
@@ -85,7 +85,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 0 &&
+                                index == 0 && // eslint-disable-line
                                 <div className="content">
                                     <div className="text-box">
                                         <div className="title-primary">第八识</div>
@@ -95,7 +95,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 1 &&
+                                index == 1 && // eslint-disable-line
                                 <div className="content">
                                     <div className="text-box">
                                         <div className="title">埃癸斯(Aigis)风险控制系统</div>
@@ -114,7 +114,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 2 &&
+                                index == 2 && // eslint-disable-line
                                 <div className="content">
                                     <div className="left">
                                         {
@@ -151,7 +151,7 @@ export default class Admin extends React.Component {
                                 </div> 
                             }
                             {
-                                index == 3 &&
+                                index == 3 && // eslint-disable-line
                                 <div className="content">
                                     <div className="tips">服务概述</div>
                                     <div className="title">第八识助您在行业中保持领先地位</div>
@@ -161,10 +161,10 @@ export default class Admin extends React.Component {
                                                 <div className="serve-column" key={index}>
                                                     <div className={cx({
                                                         'image-block': true,
-                                                        'block1': index == 0,
-                                                        'block2': index == 1,
-                                                        'block3': index == 2,
-                                                        'block4': index == 3
+                                                        'block1': index == 0, // eslint-disable-line
+                                                        'block2': index == 1, // eslint-disable-line
+                                                        'block3': index == 2, // eslint-disable-line
+                                                        'block4': index == 3 // eslint-disable-line
                                                     })}></div>
                                                     <div className="column-title">{item.title}</div>
                                                     <p className="column-text">{item.info}</p>
@@ -175,7 +175,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 4 &&
+                                index == 4 && // eslint-disable-line
                                 <div className="content">
                                     <div className="tips">共塑未来</div>
                                     <div className="title">合作伙伴及客户</div>                                 
@@ -183,7 +183,7 @@ export default class Admin extends React.Component {
                                 </div>
                             }
                             {
-                                index == 5 &&
+                                index == 5 && // eslint-disable-line
                                 <div className="content">                                 
                                     <div className="title">客户服务案例</div>  
                                     <ServeSlider data={this.state.caseList} autoPlay={true} interval={8000}></ServeSlider>                        
@@ -201,7 +201,7 @@ export default class Admin extends React.Component {
                                 </div>
                             */}
                             {
-                                index == 6 &&
+                                index == 6 && // eslint-disable-line
                                 <div className="content">                               
                                     <div className="title">联系我们</div>
                                     <p className="email">电子邮箱： alaya@leadfintech.com</p>
@@ -216,8 +216,8 @@ export default class Admin extends React.Component {
                     this.state.curPage < 4 &&
                     <div className={cx({
                         'img-box': true,
-                        'active2': this.state.curPage == 2,
-                        'active3': this.state.curPage == 3,
+                        'active2': this.state.curPage == 2, // eslint-disable-line
+                        'active3': this.state.curPage == 3, // eslint-disable-line
                         'img-hide': this.state.imgHide
                     })}>
                         <img className="pic pic1" src="./assets/image/Tealscreen.png" alt="" />
